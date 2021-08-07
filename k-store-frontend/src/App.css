@@ -1,0 +1,28 @@
+:root {
+	--mainColor: #2a2a72;
+	--lightcolor: #009ffd;
+	--mainWhite: #f3f3f3;
+	--mainDark: #232528;
+	--mainYellow: #ffa400;
+}
+
+/* add !important to override the Bootstrap css */
+body {
+	font-family: "Cormorant Garamond, Baskerville", serif !important;
+	background-color: var(--mainWhite) !important;
+	color: var(--mainDark) !important;
+}
+
+.text-title {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+.text-blue {
+	color: var(--mainColor);
+}
+
+.text-bright {
+	color: var(--lightcolor);
+}
