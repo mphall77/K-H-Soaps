@@ -1,15 +1,9 @@
-\c soaps_shop;
+\c soap_log;
 
-INSERT INTO soaps(name, photo, description, price) 
-VALUES 
-('Lavender', '../images/lavender soap.jpeg', 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit', '9.00'),
-('Lemongrass Ginger', '../images/lemongrass ginger.jpeg', 'Phasellus nulla libero, sagittis id interdum ullamcorper, dictum eget turpis. Aenean at quam mattis, posuere massa nec, rhoncus enim. Cras.', '9.00'),
-('Green Tea', '../images/green.jpg', 'Nullam sed scelerisque odio. Integer volutpat arcu vel est posuere semper. Sed.', '9.00'),
-('Satsuma', '../images/satsuma.jpeg', 'Vestibulum in libero ornare, rutrum ipsum molestie, ultricies diam. Maecenas et lacus ipsum. Duis id quam.', '9.00');
+INSERT INTO soaps (name, image, description, price)
+VALUES
+('Green Tea', 'https://picsum.photos/id/1080/300/300', 'Integer congue nibh nisl, vitae blandit tellus interdum et. Mauris nec ligula ante. Praesent varius.', '9.00'),
+('Lemongrass Ginger','https://picsum.photos/id/1080/300/300','Integer congue nibh nisl, vitae blandit tellus interdum et. Mauris nec ligula ante. Praesent varius.Integer congue nibh nisl, vitae blandit tellus interdum et. Mauris nec ligula ante. Praesent varius.','9.00'),
+('Oat','https://picsum.photos/id/1080/300/300','Phasellus nec arcu id sapien fermentum sodales ut ut nulla. Aliquam aliquam sollicitudin sem, in facilisis ante vehicula at. Pellentesque.','9.00'),
+('Detox','https://picsum.photos/id/1080/300/300','Donec malesuada, lectus cursus lacinia tincidunt, turpis nisl sodales mi, a ultrices nulla leo non neque. Sed ipsum.','9.00');
 
-
--- ('Lavender Oat', '../src/images/', '', '')
--- ('Black', '../src/images/', '', '')
--- ('Patchouli', '../src/images/', '', '')
--- ('Pineapple ginger', '../src/images/', '', '')
--- ('Honey Oat', '../src/images/', '', '')

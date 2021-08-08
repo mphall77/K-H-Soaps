@@ -1,13 +1,13 @@
-DROP DATABASE IF EXISTS soaps_shop;
+DROP DATABASE IF EXISTS soap_log;
 
-CREATE DATABASE soaps_shop;
+CREATE DATABASE soap_log;
 
-\c soaps_shop;
+\c soap_log;
 
-CREATE TABLE soaps(
+CREATE TABLE soaps (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    photo TEXT NOT NULL,
-    description VARCHAR(500) NOT NULL,
-    price NUMERIC NOT NULL,
+    name TEXT NOT NULL,
+    image TEXT,
+    description TEXT NOT NULL,
+    price NUMERIC NOT NULL
 );
