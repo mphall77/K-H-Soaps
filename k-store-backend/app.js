@@ -8,7 +8,7 @@ const app = express();
 
 // MIDDLEWARE
 app.use(cors());
-app.use(express.json()); // Parse incoming JSON
+app.use(express.json());
 
 // SOAP Route
 app.use("/soaps", soapsController);

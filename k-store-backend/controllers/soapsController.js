@@ -10,7 +10,6 @@ soaps.get("/", async (_, res) => {
 // SHOW
 soaps.get("/:id", async (req, res) => {
 	const { id } = req.params;
-
 	const soap = await queries.getSoap(id);
 	res.json({ success: true, payload: soap });
 });

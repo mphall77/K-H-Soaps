@@ -3,14 +3,13 @@ const db = require("../db/dbConfig.js");
 const getAllSoaps = async () => {
 	try {
 		const allSoaps = await db.any("SELECT * FROM soaps");
-		console.log(allSoaps);
 		return allSoaps;
 	} catch (err) {
 		return err;
 	}
 };
 
-const getSoap = async () => {
+const getSoap = async (id) => {
 	try {
 		return await db.one("SELECT * FROM soaps WHERE id = $1", id);
 	} catch (err) {
