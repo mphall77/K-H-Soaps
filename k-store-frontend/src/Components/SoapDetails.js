@@ -25,10 +25,13 @@ const SoapDetails = () => {
 
 	return (
 		<section>
-			<p>{soap.name}</p>
-			<p>${soap.price}</p>
+			<div>
+				<h2>{soap.name}</h2>
+				<h5>USD ${soap.price}</h5>
+			</div>
 			<div>
 				<img src={soap.image} alt={soap.name} />
+				<p>{soap.description}</p>
 			</div>
 			<form>
 				<label htmlFor="">

@@ -1,9 +1,9 @@
 :root {
 	--mainColor: #2a2a72;
-	--lightcolor: #009ffd;
-	--mainWhite: #f3f3f3;
+	--lightcolor: #809eaf;
+	--mainWhite: #f4f1ea;
 	--mainDark: #232528;
-	--mainYellow: #ffa400;
+	--mainGrey: #757677;
 }
 
 /* add !important to override the Bootstrap css */
@@ -25,4 +25,78 @@ body {
 
 .text-bright {
 	color: var(--lightcolor);
+}
+
+/* HEADER */
+header {
+	height: 10vh;
+	width: 100vw;
+	background-color: var(--mainGrey);
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--mainWhite);
+}
+
+/* NavBAR */
+nav {
+	margin-top: 10vh;
+	height: 100vh;
+	width: 20vw;
+	background-color: var(--mainWhite);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow-x: hidden;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav a {
+	color: var(--mainGrey) !important;
+}
+
+nav a:hover {
+	border-bottom: 1px solid var(--mainColor);
+}
+
+.nav-img {
+	width: 100%;
+}
+
+li {
+	width: 100%;
+	padding: 1rem;
+}
+
+/* MAIN */
+main {
+	margin-left: 20vw;
+	padding-top: 10vh;
+
+	background-color: rgba(97, 96, 94, 0.3);
+	height: 100vh;
+}
+
+img {
+	width: 10rem;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.card {
+	border: 1px solid black;
+	width: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

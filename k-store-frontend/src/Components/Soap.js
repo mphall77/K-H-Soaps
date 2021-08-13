@@ -6,7 +6,6 @@ const Soap = ({ soap }) => {
 			<div className="card">
 				<img src={soap.image} alt={soap.name} />
 				<p>{soap.name}</p>
-				{/* <p>{soap.description}</p> */}
 				<p>USD ${soap.price}</p>
 			</div>
 		</Link>

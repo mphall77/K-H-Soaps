@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // COMPONENTS
 import NavBar from "./Components/NavBar";
 import FourOFour from "./Components/FourOFour";
+import Cart from "./Components/Cart";
 
 // PAGES
 import Home from "./Pages/Home";
@@ -17,7 +18,6 @@ function App() {
 		<div className="App">
 			<Router>
 				<NavBar />
-				{/* <img src={logo} alt="logo" /> */}
 				<main>
 					<Switch>
 						<Route exact path="/">
@@ -25,6 +25,9 @@ function App() {
 						</Route>
 						<Route exact path="/soaps">
 							<Index />
+						</Route>
+						<Route exact path="/cart">
+							<Cart />
 						</Route>
 
 						<Route exact path="/soaps/:id">
