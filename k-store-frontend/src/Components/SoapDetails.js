@@ -45,7 +45,7 @@ const SoapDetails = () => {
 					Back
 				</button>
 			</Link>
-			<Button>Test</Button>
+			<Button>Test -</Button>
 		</section>
 	);
 };
