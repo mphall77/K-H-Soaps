@@ -1,6 +1,6 @@
 :root {
 	--mainColor: #2a2a72;
-	--lightcolor: #809eaf;
+	--lightColor: #809eaf;
 	--mainWhite: #f4f1ea;
 	--mainDark: #232528;
 	--mainGrey: #757677;
@@ -24,7 +24,7 @@ body {
 }
 
 .text-bright {
-	color: var(--lightcolor);
+	color: var(--lightColor);
 }
 
 /* HEADER */
@@ -52,8 +52,8 @@ nav {
 	left: 0;
 	z-index: 1;
 	overflow-x: hidden;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: left;
+	text-transform: capitalize;
 }
 
 nav a {
@@ -91,6 +91,7 @@ img {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 1rem;
+	margin-top: 2rem;
 }
 
 .card {

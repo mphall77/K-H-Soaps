@@ -12,6 +12,7 @@ import Cart from "./Components/Cart";
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";
 import Show from "./Pages/Show";
+import SoapList from "./Components/SoapList";
 
 function App() {
 	return (
@@ -21,7 +22,8 @@ function App() {
 				<main>
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							{/* <Home /> */}
+							<SoapList />
 						</Route>
 						<Route exact path="/soaps">
 							<Index />
